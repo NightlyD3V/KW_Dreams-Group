@@ -1,7 +1,35 @@
 #Top_Content_Container {
-    margin: 0px;
-    padding: 0px;
+    display: flex;
 }
 #Hero_Image {
-    max-width: 100%;
+    max-width: 100%; 
+    filter: blur(4px);
+}
+#Hero_Text_Container {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, 0%);
+}
+#Hero_Text {
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+#Hero_Button_Container {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+#Hero_Button {
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    background-color: lightskyblue;
 }
