@@ -1,0 +1,29 @@
+#Navbar_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+}
+#Navbar_Logo {
+   font-family: 'Yesteryear', cursive;
+   font-size: 2.5rem;
+   color: whitesmoke;
+   padding: 12px;
+   padding-left: 3rem;
+}
+#Navbar_Links_Container {
+    display: flex;
+    padding-left: 7em;
+}
+#Navbar_Links {
+    padding-right: 1em;
+    color: lightgrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+#Navbar_Links:hover {
+    color: lightskyblue;
+    cursor: pointer;
+    font-weight: 300;
+}
