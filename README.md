@@ -1,5 +1,5 @@
 # KW Dreams Group 🔥 
 ## Rentals, Property Management, Trucking/ Logistics, & Credit Repair. 
 <br> 
-### Developed with React.js, Node & lots of caffeine
+### Developed with React.js, Django, & lots of caffeine
  
