@@ -1,5 +1,5 @@
 import React from 'react';
-import './Middle_Content.css';
+import '../css/Middle_Content';
 
 function Middle_Content(props) {
     return(

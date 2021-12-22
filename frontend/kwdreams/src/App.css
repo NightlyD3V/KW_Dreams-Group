@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-.App {
-  display: flex;
-  background-color: whitesmoke;
-  justify-content: center;
+.App{
+	max-width: 100%;
 }

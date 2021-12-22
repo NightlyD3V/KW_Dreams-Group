@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import '../css/Navbar.css';
 
 function Navbar(props) {
     return(
@@ -9,7 +9,7 @@ function Navbar(props) {
                 alignItems: "center",
                 color: "whitesmoke"
             }}>
-                <h1 id="Navbar_Logo">Kw_Dreams</h1>
+                <h1 id="Navbar_Logo">Kw-Dreams</h1>
             </div>
             <div id="Navbar_Links_Container">
                 <h4 id="Navbar_Links">Home</h4>
