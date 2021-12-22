@@ -1,20 +1,25 @@
 #Navbar_Container {
+    position: fixed;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
+    width: 100%; 
+    flex-wrap: wrap;
     background-color: black;
     padding: 30px;
+    z-index: 1;
 }
 #Navbar_Logo {
    font-family: 'Yesteryear', cursive;
    font-size: 2.5rem;
    color: whitesmoke;
    padding: 12px;
-   padding-left: 3rem;
+   margin-bottom: 10px;
 }
 #Navbar_Links_Container {
     display: flex;
-    padding-left: 7em;
+    justify-content: center;
+    align-items: center;
 }
 #Navbar_Links {
     padding-right: 1em;
@@ -26,4 +31,12 @@
     color: lightskyblue;
     cursor: pointer;
     font-weight: 300;
+}
+#Login_Button {
+    border: none;
+    border-radius: 0%;
+}
+#Navbar_Login {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

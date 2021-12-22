@@ -15,6 +15,7 @@ function Top_Content(props) {
                     <button id="Hero_Button">SELLING</button>
                     <button id="Hero_Button">BUYING</button>
                     <button id="Hero_Button">BECOME AN AGENT</button>
+                    <button id="Hero_Register_Button">MAKE AN ACCOUNT</button>
                 </div>
             </div>
         </div>
