@@ -3,7 +3,7 @@ import '../css/Footer.css';
 
 function Footer() {
     return (
-        <footer style={{backgroundColor:"black"}}>
+        <footer style={{backgroundColor:"black", position: 'fixed', bottom: '0px', width:'100%'}}>
             <h1 style={{
                 textSize: "5rem",
                 padding: "10px",

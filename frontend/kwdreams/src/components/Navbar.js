@@ -24,9 +24,11 @@ const Navbar = (props) => {
                 </Link>
                 <h4 id="Navbar_Links">Selling</h4>
                 <h4 id="Navbar_Links">Data</h4>
-                <button id="Login_Button">
-                    <h4 id="Navbar_Login">Login</h4>
-                </button>
+                <Link id="Navbar_Links" to="/login">
+                    <button id="Login_Button">
+                        <h4>Login</h4>
+                    </button>
+                </Link>
             </div>
         </nav>
     )
