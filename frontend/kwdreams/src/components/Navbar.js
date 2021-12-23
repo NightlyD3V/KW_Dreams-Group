@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/Navbar.css';
+import {Link} from 'react-router-dom';
 
-function Navbar(props) {
+const Navbar = (props) => {
     return(
         <nav id="Navbar_Container">
             <div style={{display: "flex", 
@@ -12,9 +13,15 @@ function Navbar(props) {
                 <h1 id="Navbar_Logo">Kw-Dreams</h1>
             </div>
             <div id="Navbar_Links_Container">
-                <h4 id="Navbar_Links">Home</h4>
-                <h4 id="Navbar_Links">About</h4>
-                <h4 id="Navbar_Links">Buying</h4>
+                <Link id="Navbar_Links" to="/">
+                    <h4>Home</h4>
+                </Link>
+                <Link id="Navbar_Links" to="/about">
+                    <h4>About</h4>
+                </Link>
+                <Link id="Navbar_Links" to="/buying">
+                    <h4>Buying</h4>
+                </Link>
                 <h4 id="Navbar_Links">Selling</h4>
                 <h4 id="Navbar_Links">Data</h4>
                 <button id="Login_Button">
