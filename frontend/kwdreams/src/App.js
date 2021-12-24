@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.js';
 import Top_Content from './components/Top_Content.js';
 import Footer from './components/Footer.js';
 import Login from './components/Login.js';
+import Register from './components/Register.js';
 import {Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Top_Content />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
       <Footer></Footer>
     </div>

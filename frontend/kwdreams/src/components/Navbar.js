@@ -22,8 +22,12 @@ const Navbar = (props) => {
                 <Link id="Navbar_Links" to="/buying">
                     <h4>Buying</h4>
                 </Link>
-                <h4 id="Navbar_Links">Selling</h4>
-                <h4 id="Navbar_Links">Data</h4>
+                <Link id="Navbar_Links" to="/selling">
+                    <h4>Selling</h4>
+                </Link>
+                <Link id="Navbar_Links" to="/data">
+                    <h4>Data</h4>
+                </Link>
                 <Link id="Navbar_Links" to="/login">
                     <button id="Login_Button">
                         <h4>Login</h4>

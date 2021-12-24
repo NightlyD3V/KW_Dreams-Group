@@ -37,8 +37,8 @@ class Login extends React.Component {
     }
 
     // FUNCTIONS //
-    handleInput = (e) => {
-        e.preventDefaults(); 
+    handleChanges = (e) => {
+        e.preventDefault(); 
         this.setState({
             ...this.state, 
             [e.target.name] : e.target.value
@@ -54,16 +54,20 @@ class Login extends React.Component {
                         <form>
                             <h3>Email address</h3>
                             <input style={inputStyle}
+                                onChange={this.handleChanges}
                                 placeholder="Email"
+                                name='email'
+                                value={this.state.email}
                                 required
                                 >
                             </input>
                             <br/>
                             <h3>Password</h3>
                             <input style={inputStyle}
-                                onChange={this.handleInput}
+                                onChange={this.handleChanges}
                                 placeholder="Password"
                                 name="password"
+                                value={this.state.password}
                                 required
                                 >    
                             </input>

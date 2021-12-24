@@ -10,7 +10,7 @@ function Footer() {
                 fontStyle: "Roboto",
                 textAlign: "center",
                 color: "white",
-            }}>&copy; 2021 <a id="Footer_Github_Link" href="https://github.com/NightlyD3V">NightlyD3V</a></h1>
+            }}>&copy; 2022 <a id="Footer_Github_Link" href="https://github.com/NightlyD3V">NightlyD3V</a></h1>
         </footer>
     )
 }
