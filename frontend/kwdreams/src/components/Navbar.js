@@ -10,7 +10,7 @@ const Navbar = (props) => {
                 alignItems: "center",
                 color: "whitesmoke"
             }}>
-                <h1 id="Navbar_Logo">Kw-Dreams</h1>
+                <h1 id="Navbar_Logo">Kw-Dreams.</h1>
             </div>
             <div id="Navbar_Links_Container">
                 <Link id="Navbar_Links" to="/">

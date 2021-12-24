@@ -1,0 +1,9 @@
+/* NEEDS MEDIA QUERIES! */
+#Submit_Button{
+    border: none;
+    background-color: olivedrab;
+}
+#Register_Button{
+    background-color: darkslateblue;
+    color: white;
+}
