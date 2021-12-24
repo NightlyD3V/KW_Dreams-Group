@@ -26,6 +26,7 @@
     color: lightgrey;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    text-decoration: none;
 }
 #Navbar_Links:hover {
     color: lightskyblue;
