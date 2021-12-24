@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Login.css';
 
 //CSS
 const containerStyle = {
@@ -6,38 +7,81 @@ const containerStyle = {
     flexDirection: 'column', 
     justifyContent: 'center', 
     alignItems: 'center',
-    backgroundColor: "lightskyblue",
-    marginTop: '300px',
-    width: '80%',
-    padding: '50px'
+    marginTop: '180px',
+    width: '50%',
+    height: '500px',
+    padding: '50px',
+    borderRadius: '5px'
 }
 const buttonStyle = {
     border: "none",
     padding: '10px',
     margin: '10px',
 }
+const inputStyle = {
+    marginTop: '10px',
+    marginBottom: '10px',
+    padding: '10px',
+    border: 'none',
+    backgroundColor: 'lightgrey'
+}
 
 class Login extends React.Component {
     constructor(props) {
         super(props);
+        // STATE //
         this.state = {
-
+            email: '',
+            password: '',
         }
     }
+
+    // FUNCTIONS //
+    handleInput = (e) => {
+        e.preventDefaults(); 
+        this.setState({
+            ...this.state, 
+            [e.target.name] : e.target.value
+        })
+   }
+
     render() {
         return (
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <div style={containerStyle}>
-                    <h1 style={{fontSize: '4rem', fontFamily: 'Yesteryear, cursive', color:'whitesmoke'}}>Kw-Dreams</h1>
-                    <h4 style={{padding:"20px"}}>Login</h4>
+                    <h4 style={{padding:"20px", fontFamily:"Roboto"}}>LOGIN</h4>
                     <div>
                         <form>
-                            <input placeholder="Username"></input>
+                            <h3>Email address</h3>
+                            <input style={inputStyle}
+                                placeholder="Email"
+                                required
+                                >
+                            </input>
                             <br/>
-                            <input placeholder="Password"></input>
+                            <h3>Password</h3>
+                            <input style={inputStyle}
+                                onChange={this.handleInput}
+                                placeholder="Password"
+                                name="password"
+                                required
+                                >    
+                            </input>
+                            <br/>
+                            <button id="Submit_Button" style={buttonStyle}>SUBMIT</button>
+                            <button id="Register_Button" style={buttonStyle}>REGISTER</button>
                         </form>
-                        <button id="Submit_Button" style={buttonStyle}>SUBMIT</button>
-                        <button id="Register_Button" style={buttonStyle}>REGISTER</button>
+                    </div>
+                </div>
+                <div style={containerStyle}>
+                    <h1 style={{color: 'black', fontFamily:'Roboto', fontSize:'3rem'}}>
+                        Localized data with ratings and insights from users just like you.
+                    </h1>
+                    <div style={{marginTop: '25px'}}>
+                        <h1>Powered by a high performance web server and reverse proxy. </h1>
+                        <img style={{width: '20%'}} src="/images/NGINX.png"/>
+                        <img style={{width: '30%'}} src="/images/Gunicorn.png"/>
+                        <img style={{width: '20%', marginLeft:'5px'}} src='https://static.djangoproject.com/img/logos/django-logo-positive.svg'/>
                     </div>
                 </div>
             </div>
