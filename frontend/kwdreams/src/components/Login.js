@@ -1,13 +1,13 @@
 import React from 'react';
 import '../css/Login.css';
-
+import {Link} from 'react-router-dom';
 //CSS
 const containerStyle = {
     display: 'flex', 
     flexDirection: 'column', 
     justifyContent: 'center', 
     alignItems: 'center',
-    marginTop: '180px',
+    marginTop: '125px',
     width: '50%',
     height: '500px',
     padding: '50px',
@@ -73,7 +73,9 @@ class Login extends React.Component {
                             </input>
                             <br/>
                             <button id="Submit_Button" style={buttonStyle}>SUBMIT</button>
-                            <button id="Register_Button" style={buttonStyle}>REGISTER</button>
+                            <Link to="/register">
+                                <button id="Register_Button" style={buttonStyle}>REGISTER</button>
+                            </Link>
                         </form>
                     </div>
                 </div>
@@ -82,7 +84,9 @@ class Login extends React.Component {
                         Localized data with ratings and insights from users just like you.
                     </h1>
                     <div style={{marginTop: '25px'}}>
-                        <h1>Powered by a high performance web server and reverse proxy. </h1>
+                        <h1>
+                            <hr />
+                            Powered by a high performance web server, reverse proxy & the Zillow api. </h1>
                         <img style={{width: '20%'}} src="/images/NGINX.png"/>
                         <img style={{width: '30%'}} src="/images/Gunicorn.png"/>
                         <img style={{width: '20%', marginLeft:'5px'}} src='https://static.djangoproject.com/img/logos/django-logo-positive.svg'/>
