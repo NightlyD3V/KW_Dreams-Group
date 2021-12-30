@@ -23,6 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
+MONGODB_CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'playground',
+    'app.playground',
+    'app.polls',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +76,16 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'kw-dreams',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT' : {
+            'host': MONGODB_CONNECTION_STRING,
+        }
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

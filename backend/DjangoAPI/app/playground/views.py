@@ -20,3 +20,8 @@ def say_hello(request):
         'hello.html'
     )
 
+def create_user(request):
+    return(
+        request.status(200, 'OK')
+    )
+
