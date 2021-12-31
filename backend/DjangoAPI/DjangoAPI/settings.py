@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.messages',
+    'django.contrib.sessions',
     'django.contrib.staticfiles',
     'app.playground',
     'app.polls',
+    'app.users',
 ]
 
 MIDDLEWARE = [
@@ -78,11 +80,12 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'kw-dreams',
+        'ENGINE': 'django.db.backends.djongo',
+        'NAME': 'kwdreams',
         'ENFORCE_SCHEMA': False,
         'CLIENT' : {
             'host': MONGODB_CONNECTION_STRING,
+            'authMechanism': 'SCRAM-SHA-1',
         }
     }
 }

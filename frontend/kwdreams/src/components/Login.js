@@ -52,7 +52,6 @@ class Login extends React.Component {
                     <h4 style={{padding:"20px", fontFamily:"Roboto"}}>LOGIN</h4>
                     <div>
                         <form>
-                            <h3>Email address</h3>
                             <input style={inputStyle}
                                 onChange={this.handleChanges}
                                 placeholder="Email"
@@ -62,7 +61,6 @@ class Login extends React.Component {
                                 >
                             </input>
                             <br/>
-                            <h3>Password</h3>
                             <input style={inputStyle}
                                 onChange={this.handleChanges}
                                 placeholder="Password"
@@ -82,14 +80,18 @@ class Login extends React.Component {
                 <div style={containerStyle}>
                     <h1 style={{color: 'black', fontFamily:'Roboto', fontSize:'3rem'}}>
                         Localized data with ratings and insights from users just like you.
+                        <hr />
                     </h1>
                     <div style={{marginTop: '25px'}}>
                         <h1>
-                            <hr />
-                            Powered by a high performance web server, reverse proxy & the Zillow api. </h1>
-                        <img style={{width: '20%'}} src="/images/NGINX.png"/>
-                        <img style={{width: '30%'}} src="/images/Gunicorn.png"/>
-                        <img style={{width: '20%', marginLeft:'5px'}} src='https://static.djangoproject.com/img/logos/django-logo-positive.svg'/>
+                            Powered by a high performance web server, reverse proxy & the Zillow api. 
+                        </h1>
+                        <div style={{displayt: 'flex', justifyContent: 'space-between'}}>
+                            <img style={{width: '25%'}} src="/images/NGINX.png"/>
+                            <img style={{width: '25%'}} src='https://static.djangoproject.com/img/logos/django-logo-positive.svg'/>
+                            <img style={{width: '25%'}} src="/images/Gunicorn.png"/>
+                            <img style={{width: '25%'}} src="/images/MongoDB.png"/>
+                        </div>
                     </div>
                 </div>
             </div>
