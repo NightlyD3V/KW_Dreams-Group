@@ -28,7 +28,7 @@ MONGODB_CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['149.28.225.49']
 
 
 # Application definition
