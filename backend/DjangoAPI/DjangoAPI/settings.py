@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.djongo',
+        'ENGINE': 'djongo',
         'NAME': 'kwdreams',
         'ENFORCE_SCHEMA': False,
         'CLIENT' : {
