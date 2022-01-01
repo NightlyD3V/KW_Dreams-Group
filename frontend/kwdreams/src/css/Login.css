@@ -3,6 +3,9 @@
     border: none;
     background-color: olivedrab;
 }
+#Login_Button {
+    padding: 10px;
+}
 #Register_Button{
     background-color: darkslateblue;
     color: white;
