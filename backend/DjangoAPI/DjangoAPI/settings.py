@@ -23,12 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
+MY_IP = os.getenv("MY_IP")
 MONGODB_CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['149.28.225.49']
+ALLOWED_HOSTS = [MY_IP]
 
 
 # Application definition
