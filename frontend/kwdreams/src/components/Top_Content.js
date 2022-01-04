@@ -9,7 +9,7 @@ function Top_Content(props) {
                 <img id="Hero_Image" src="/images/Hero_Image.jpg"></img>
             </div>
             <div id="Hero_Text_Container">
-                <h1 id="Hero_Text">A modern way to buy.</h1>
+                <p id="Hero_Text">A <em>modern</em> way to buy.</p>
                 <h1 id="Hero_Text">A better way to sell.</h1>
                 <div id="Hero_Button_Container">
                     <div id="Rent_Sell_Buy">
