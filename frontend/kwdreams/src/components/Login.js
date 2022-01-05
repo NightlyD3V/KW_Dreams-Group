@@ -8,10 +8,20 @@ const containerStyle = {
     justifyContent: 'center', 
     alignItems: 'center',
     marginTop: '125px',
-    width: '50%',
+    width: '25%',
     height: '500px',
-    padding: '50px',
-    borderRadius: '5px'
+    padding: '25px',
+    margin: '35px',
+    borderRadius: '5px',
+    backgroundColor: 'lightgrey',
+}
+const infoContainerStyle = {
+    display: 'flex',
+    flexDirection: 'column', 
+    justifyContent: 'center', 
+    alignItems: 'center',
+    marginTop: '125px',
+    width: '50%',
 }
 const buttonStyle = {
     border: "none",
@@ -23,7 +33,7 @@ const inputStyle = {
     marginBottom: '10px',
     padding: '10px',
     border: 'none',
-    backgroundColor: 'lightgrey'
+    backgroundColor: 'white'
 }
 
 class Login extends React.Component {
@@ -77,7 +87,7 @@ class Login extends React.Component {
                         </form>
                     </div>
                 </div>
-                <div style={containerStyle}>
+                <div style={infoContainerStyle}>
                     <h1 style={{color: 'black', fontFamily:'Roboto', fontSize:'3rem'}}>
                         Localized data with ratings and insights from users just like you.
                         <hr />

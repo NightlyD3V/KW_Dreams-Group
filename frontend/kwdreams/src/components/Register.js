@@ -4,6 +4,7 @@ import React from 'react';
 const formContainerStyle = {
     padding: '25px',
     textAlign: 'center',
+    backgroundColor: 'lightgrey'
 }
 
 const inputStyle = { 
