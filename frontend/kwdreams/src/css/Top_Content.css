@@ -4,7 +4,7 @@
     max-width: 100%;
 }
 #Hero_Image {
-    object-fit: cover;
+    object-fit: contain;
     height: 1000px;
     filter: blur(3px);
 }
@@ -17,6 +17,8 @@
     font-size: 5rem;
     color: whitesmoke;
     font-weight: 500;
+    animation-name: fade-in;
+    animation-duration: 3s;
 }
 
 #Hero_Button_Container {
@@ -55,4 +57,18 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     color: olivedrab;
+}
+/* ANIMATION */
+@keyframes fade-in { 
+    from {opacity: 0}
+    to {opacity: 1}
+}
+/* RESPONSIVE TO SCREEN SIZES */
+@media screen and (max-width: 600px) {
+    #Hero_Text {
+        font-size: 2.5rem;
+    }
+    #Hero_Text_Container {
+        margin-top: 25px;
+    }
 }

@@ -33,6 +33,12 @@ class Navbar extends React.Component {
                     <Link id="Navbar_Links" to="/selling">
                         <h4>Selling</h4>
                     </Link>
+                    <Link id="Navbar_Links" to="/credit">
+                        <h4>Credit-Repair</h4>
+                    </Link>
+                    <Link id="Navbar_Links" to="/logistics">
+                        <h4>Logistics</h4>
+                    </Link>
                     <Link id="Navbar_Links" to="/data">
                         <h4>Data</h4>
                     </Link>
